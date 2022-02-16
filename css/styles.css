@@ -1,0 +1,58 @@
+/* -------------------------google font ------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* --------------------------Common Utilities ---------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #b9b3f7;
+  height: 100vh;
+}
+#title {
+  text-shadow: 1px 1px #bfbfbf, -1px 1px #bfbfbf, 1px -1px #bfbfbf,
+    -1px -1px #bfbfbf;
+  color: rgb(61, 61, 61);
+}
+.container {
+  max-width: 700px;
+}
+.input-group {
+  max-width: 350px;
+}
+.notification {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  padding: 30px;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid#4a9338;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.toast-message-slide-in {
+  animation: toast-animation-slide-in 0.5s ease;
+}
+.toast-message-slide-out {
+  animation: toast-animation-slide-out 0.5s ease;
+}
+
+@keyframes toast-animation-slide-in {
+  from {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes toast-animation-slide-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+}

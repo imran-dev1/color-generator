@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic Color Generator</title>
+
+  <!-- -------Font awesome---------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- -------Bootstrap CSS stylesheet ---------- -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- ---------Vanilla CSS---------------------  -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="align-items-center container d-flex flex-column justify-content-center h-100">
+    <h1 class="text-center fw-bold mb-5" id="title">Change The Background Color By Clicking The Following Button</h1>
+    <div class="input-group input-group-lg mb-4 shadow-lg">
+      <input type="text" class="form-control"  disabled id="color-code">
+      <button class="btn btn-warning fs-6" type="button" id="copy-btn">Copy</button>
+    </div>
+    <button type="button" class="btn btn-lg btn-outline-light bg-dark text-white py-3 px-5" id="change-color-btn">Change Color</button>
+  </div>
+
+
+  <!-- -----------Bootstrap Javascript  -------------------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- -----------vanilla Javascript ------------------------ -->
+  <script src="js/main.js"></script>
+</body>
+
+
+</html>
